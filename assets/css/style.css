@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --clear-black: #1B1212;
+  --light-grey: #f5f6f7;
+}
+
+body {
+  font-size: 18px;
+  color: var(--clear-black);
+  font-family: "Prompt", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6E6FA;
+  color: #1d1160;
+}
+  
+.kcal-icon-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40em;
+  width: 50em;
+}
+
+h1 {
+  text-align: center;  
+  padding-bottom: 0.8em;
+}
+  
+.container {
+  width: 100%; 
+  max-width: 600px;
+}
+  
+.output {
+  margin: 20px auto;
+}
+  
+label,legend {
+  font-weight: bold;
+}
+  
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+  
+button {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;  
+  min-height: 24px;
+  color: #1d1160;
+  background-color: whitesmoke;
+  padding: .5em;
+  font-weight: bold;
+}
+
+input {
+  color: #1d1160;
+  background-color: whitesmoke;
+  padding: .5em;
+  font-weight: bold;  
+  border: none;
+}
+
+select {
+  min-height: 24px;
+  color: #1d1160;
+  background-color: whitesmoke;
+  padding: .4em;
+  font-weight: bold;
+  border: none;
+}
+
+input::placeholder {
+  color: #1d1160;
+}  
+
+fieldset, label, button, input, select {
+  margin-bottom: 1.5em;
+  border-radius: .3em;
+}
+  
+.output {
+  border: 2px solid var(--light-grey);
+  padding: 10px;
+  text-align: center;
+}
+  
+.hide {
+  display: none;
+}
+  
+.output span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+  
+.surplus, .deficit {
+  color: #1d1160;
+}
